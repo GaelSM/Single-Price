@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+--Cyan: hsl(179, 62%, 43%);
+--Bright-Yellow: hsl(71, 73%, 54%);
+--Light-Gray: hsl(204, 43%, 93%);
+--Grayish-Blue: hsl(218, 22%, 67%);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+  font-family: 'Karla', sans-serif;
+}
+
+body{
+  background-color: var(--Light-Gray);
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 7rem 0;
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  border-radius: .5rem;
+  box-shadow: 0rem .1rem 1.5rem rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.container div{
+  width: 31.5rem;
+  padding: 2.5rem;
+  font-size: 1.6rem;
+}
+
+.container div h2{
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.community{
+  background-color: #fff;
+}
+
+.community h2{
+  color: var(--Cyan);
+}
+
+.community h3{
+  font-size: 1.5rem;
+  font-weight: 700;
+  color:  var(--Bright-Yellow);
+  margin-bottom: 2rem;
+}
+
+.community p{
+  font-size: 1.35rem;
+  font-weight: 100;
+  color: var(--Grayish-Blue);
+  line-height: 1.7;
+}
+
+.subscription{
+  background-color: var(--Cyan);
+  color: #fff;
+}
+
+.subscription h3{
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+.subscription h3 span{
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: hsl(179, 50%, 70%);
+}
+
+.subscription p{
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.subscription button{
+  width: 100%;
+  padding: 1.5rem 0;
+  font-size: 1.6rem;
+  font-family: 'Karla';
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--Bright-Yellow);
+  border: none;
+  border-radius: .7rem;
+  box-shadow: 0 .5rem 1.2rem rgba(0,0,0,0.19);
+}
+
+.whyus{
+  background-color: #4ABEBD;
+  color: #fff;
+}
+
+.whyus ul{
+  list-style: none;
+  color: hsl(179, 50%, 85%);
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+@media (min-width: 700px){
+  main{
+    height: 100vh;
+  }
+
+  .container{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .container div{
+    padding: 4.2rem;
+  }
+
+  .container .community h2{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .container .community h3{
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+  }
+
+  .container .community p{
+    font-size: 1.6rem;
+  }
+
+  .container div.community{
+    width: 63rem;
+    grid-area: 1 / 1 / 2 / -1;
+  }
+
+
+}
+
+
+
+
+
